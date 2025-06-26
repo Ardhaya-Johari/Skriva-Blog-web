@@ -1,0 +1,224 @@
+/* Reset and Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body.wrap {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #fefefe;
+  color: #333;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+/* Header */
+.nav {
+  background: #22a5c5;
+  color: #fff;
+  padding: 20px 30px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.nav h1 {
+  font-size: 2em;
+  letter-spacing: 1px;
+}
+
+.nav a {
+  color: #e0f2ff;
+  text-decoration: none;
+  margin-left: 20px;
+  font-weight: 500;
+}
+
+.nav a:hover {
+  color: #f39508;
+}
+
+/* Section & Containers */
+.section,
+.content1,
+.viewBlog {
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.05);
+  margin-bottom: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: center;
+}
+
+/* Equal image and text layout */
+.section img {
+  width: 300px;
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  flex-shrink: 0;
+}
+
+.section div {
+  flex: 1;
+}
+
+.section h1,
+.section h3,
+.viewBlog h1 {
+  color: #22a5c5;
+  margin-bottom: 10px;
+}
+
+.section p,
+.viewBlog p {
+  color: #374151;
+  font-size: 1.05em;
+}
+
+/* Blog Cards */
+.blogs_container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.blog {
+  background: #f0f9ff;
+  border: 1px solid #dbeafe;
+  padding: 20px;
+  border-radius: 10px;
+  transition: box-shadow 0.3s ease;
+}
+
+.blog:hover {
+  box-shadow: 0 4px 16px rgba(37, 99, 235, 0.2);
+}
+
+.blog h3 {
+  color: #22a5c5;
+  margin-bottom: 8px;
+}
+
+.blog p {
+  font-size: 0.95em;
+  color: #4b5563;
+  margin-bottom: 10px;
+}
+
+/* Buttons */
+.btns {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  gap: 10px;
+}
+
+.btn_container {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.btn_create,
+input[type="submit"] {
+  background-color: #22a5c5;
+  color: white;
+  border: none;
+  padding: 10px 24px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1em;
+  font-weight: 500;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+input[type="submit"]:hover,
+.btn_create:hover {
+  background-color: #22a5c5;
+  transform: scale(1.05);
+}
+
+/* Create/Edit Blog Form */
+.create_blogs {
+  background: #ffffff;
+  padding: 30px 40px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+  max-width: 900px;
+  margin: 60px auto;
+}
+
+.create_blogs form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+input.title,
+input.author,
+textarea.content {
+  padding: 14px 18px;
+  font-size: 1.1em;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  background: #f9fafb;
+  transition: all 0.2s ease;
+}
+
+input.title:focus,
+input.author:focus,
+textarea.content:focus {
+  border-color: #3b82f6;
+  background-color: #fff;
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.2);
+}
+
+textarea.content {
+  height: 350px;
+  resize: vertical;
+  line-height: 1.7;
+}
+
+/* Submit Button Centered */
+input.btn_submit {
+  align-self: center;
+  background-color: #22a5c5;
+  color: #fff;
+  padding: 12px 36px;
+  border: none;
+  border-radius: 50px;
+  font-size: 1.1em;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+input.btn_submit:hover {
+  background-color: #1d4ed8;
+  transform: translateY(-2px);
+}
+
+/* Blog Content View */
+.content_container {
+  margin-top: 20px;
+  white-space: pre-line;
+  color: #334155;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #22a5c5;
+  color: #f3f4f6;
+  border-radius: 10px;
+  margin-top: 40px;
+  font-size: 0.9em;
+}
