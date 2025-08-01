@@ -113,4 +113,4 @@ This project is licensed under the [MIT License](LICENSE).
 
 ## 👨‍💻 Creator
 Built with ❤️ by Ardhaya Johari
-📧 ardhayasaxena3897@gmail.com
+# 📧 ardhayasaxena3897@gmail.com
