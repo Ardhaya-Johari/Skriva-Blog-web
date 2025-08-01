@@ -69,7 +69,7 @@ Skriva/
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/yourusername/skriva-blog.git
+git clone https://github.com/yourusername/Skriva-Blog-Web.git
 cd skriva-blog
 ```
 
